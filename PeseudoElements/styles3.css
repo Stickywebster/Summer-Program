@@ -1,0 +1,17 @@
+p::first-line{
+    color: #f00;
+}
+
+#name::first-letter {
+    color: #11e033;
+}
+
+#before::before {
+    content: ">>";
+    color: red;
+}
+
+#after::after {
+    content: "berserk";
+    color: rgb(200, 255, 0)
+}
