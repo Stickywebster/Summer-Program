@@ -79,3 +79,30 @@ h4 {
 h1 {
   text-align: center;
 }
+
+#handling-div {
+  background-color: #17255a;
+}
+
+#handling-h1 {
+  text-align: left;
+  background-color: #7c9885;
+}
+
+#Handling-p {
+  background-color: #5e0b15;
+  text-align: left;
+  /* margin-top: 0;
+  margin-bottom: 0; */
+  display: inline;
+  /* display: inline-block; */
+}
+
+#Handling-a {
+  background-color: yellow;
+  /* margin-top: 0;
+  margin-bottom: 0; */
+  display: block;
+  /* display: inline-block; */
+}
+
