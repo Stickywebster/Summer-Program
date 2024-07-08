@@ -10,3 +10,6 @@ h4 {
   text-transform: lowercase;
 }
 
+styles { 
+  width: 200px; height: 200px;
+}
