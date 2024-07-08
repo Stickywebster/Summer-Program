@@ -4,17 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
+    <style>
+      .ocean-Image {
+        border: 4px solid;
+        border-radius: 50%;
+        border-color: rgb(35, 224, 35);
+      }
+
+      .lake-Image {
+        border: 4px solid;
+        border-radius: 15px;
+        border-color: red
+      }
+    </style>
   </head>
   <body>
-    <div class="my-img">
-      <img 
-    src="https://images.unsplash.com/photo-1720366252332-a86c8a11d879?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    alt="ocean Image"
-    style ="height: 200px; width: 200px;">
-
+    <div>
       <img
-        src= "Images\Lake.jpg"
+        class="ocean-Image"
+        src="https://images.unsplash.com/photo-1720366252332-a86c8a11d879?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="ocean Image"
+        style="height: 200px; width: 200px"
+      />
+
+      <img 
+      class="lake-Image"
+        class="Lake image"
+        src="Images\Lake.jpg"
         alt="Lake Image"
         style="height: 200px; width: 200px"
       />
