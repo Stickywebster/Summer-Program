@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    border: 6px gold; 
+    border-radius: 10%;
+    height: 30%;
+    background: rgb(95, 248, 115)
+
+}
+
+
+
+th {
+    
+    background: #19d6525b;
+    
+    padding: 5%;
+    text-transform: capitalize;
+    
+    }
+    
+    td {
+    
+    padding: 5px;
+    
+    background-color: #ffffff;
+    
+    }
+
+h2 {
+    color: blue;
+    background-color: lightblue;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #60d483;
+    letter-spacing: 10px;
+}
+
+table {
+    margin: auto;
+    width: 400;
+    background-color: rgb(57, 177, 207);
+    table-layout: fixed;
+}
+
+.tableH {
+    text-align: center;
+}
