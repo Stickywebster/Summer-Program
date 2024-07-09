@@ -1,0 +1,53 @@
+body {
+    font-family: "Roboto",sans-serif;
+    background: linear-gradient(to right, rgb(79, 79, 233), lightblue);
+}
+
+section {
+    margin: 50px;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    
+}
+
+.tb1-header{
+    background-color: white;
+
+}
+
+.tbl-content{
+    height: 300px;
+    /* Hides the excessie data at height 300px basically adds scroll wheel */
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+th {
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: black;
+    text-transform: uppercase;    
+}
+
+td {
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+    border-bottom: 1px solid rgba (255, 255, 255, 0.3)
+}
