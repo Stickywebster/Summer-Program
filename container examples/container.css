@@ -4,6 +4,12 @@
   grid-template-rows: 100px 100px 100px 100px;
   grid-template-columns: 100px 100px 100px 100px;
   gap: 5px;
+
+  grid-template-areas:
+  "one two three four"
+  "space space space space"
+  "space space space space"
+  "foot foot foot foot";
 }
 
 .grid-item1 {
@@ -25,3 +31,20 @@
 
   border: black 5px solid;
 }
+
+.grid-item1 {
+    grid-area: foot;
+}
+
+.grid-item6 {
+    grid-area: one;
+}
+
+.grid-item2 {
+    grid-area: four;
+}
+
+.grid-item3 {
+    grid-area: three;
+}
+
