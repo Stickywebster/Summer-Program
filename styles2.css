@@ -52,7 +52,7 @@ li a {
 }
 
 ul li a:hover {
-background-color: #111;
+  background-color: #111;
 }
 
 .active {
@@ -66,14 +66,11 @@ p {
 h2 {
   text-transform: uppercase;
   text-align: center;
-  color: green
-  ;
+  color: green;
 }
 
 h4 {
   text-transform: lowercase;
-  
-
 }
 
 h1 {
@@ -106,28 +103,27 @@ h1 {
   /* display: inline-block; */
 }
 
-.box-model1, .box-model2 {
+.box-model1,
+.box-model2 {
   text-align: left;
   width: 400px;
   height: 120px;
   padding: 20px;
-
 }
 
 .box-model1 {
   border: 10px dashed red;
   margin: 0 0 20px 0;
   /* margin top - right - bottom - left */
-
 }
 .box-model2 {
   border: 10px soild red;
-  box-sizing:  border-box;
+  box-sizing: border-box;
 }
 
 .Position-example {
-background-color: green;
-height: 150px;
+  background-color: green;
+  height: 150px;
 }
 
 .Position-a {
@@ -137,6 +133,140 @@ height: 150px;
 }
 
 .position-r {
-   background-color: yellow;
-   color: black;
+  background-color: yellow;
+  color: black;
+}
+
+.container {
+  display: grid;
+  text-align: center;
+  grid-template-rows: 50px;
+  grid-template-columns: 100px 100px 100px;
+  gap: 5px;
+}
+
+.container p {
+  background-color: lightgreen;
+  border: 2px soild green;
+  margin: 0;
+  /* width: 200px;
+  height: 25px; */
+}
+.wrap {
+  display: grid;
+  background-color: lightblue;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-column-end: 4;
+  border: 2px solid blue;
+}
+
+.item2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-column-end: 3;
+  border: 2px solid blue;
+}
+
+.item3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  border: 2px solid blue;
+}
+
+.item4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-column-end: 4;
+  border: 2px solid blue;
+}
+
+.container-div {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav"
+    "left main main right"
+    "left main main right"
+    "foot foot foot foot";
+}
+
+.contain-nav {
+  grid-area: nav;
+
+}
+
+.contain-left {
+  grid-area: left;
+}
+
+.contain-right {
+  grid-area: right;
+}
+
+.contain-bottom {
+  grid-area: foot
+}
+
+.contain-center {
+  grid-area: main;
+  background-color: lightskyblue;
+}
+.contain-right, .contain-left {
+  background-color: gray;
+}
+
+.contain-nav, .contain-bottom {
+  background-color: lightblue;
+}
+
+.wrapper-semantic {
+  display: grid;
+  grid-template-areas: 
+ " head head head head" 
+  "nav nav nav nav"
+  "left main main right"
+  "foot foot foot foot" ;
+}
+
+.semantic-nav { 
+  grid-area: nav 
+}
+
+.semantic-head {
+  grid-area: head;
+  margin: 16px
+}
+
+.semantic-left {
+  grid-area: left;
+
+}
+
+.nav-semantic-right { 
+  grid-area: right;
+  width: 200px;
+  background-color: #333;
+  height: 100%;
+}
+
+.main-semantic {
+  display: grid;
+  grid-template-areas: "main-lt man-rt"
+  "art art";
+}
+
+.main-semantic-left {
+  grid-area: main-lt;
 }
