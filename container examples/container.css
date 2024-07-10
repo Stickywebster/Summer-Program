@@ -1,0 +1,27 @@
+.grid-container {
+  display: grid;
+  text-align: center;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px 100px;
+  gap: 5px;
+}
+
+.grid-item1 {
+  background: rgb(129, 232, 60);
+
+  text-align: center;
+
+  border: black 5px solid;
+}
+
+.grid-item2,
+.grid-item3,
+.grid-item4,
+.grid-item5,
+.grid-item6 {
+  background: grey;
+
+  text-align: center;
+
+  border: black 5px solid;
+}
