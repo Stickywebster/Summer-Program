@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.p-box1,
+.p-box2,
+.p-box3,
+.proB-1,
+.proB-2,
+.proB-3,
+.proB-4,
+.proB-5 {
+  display: grid;
+  place-items: center;
+  border: solid 5px orangered;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  color: white;
+}
+
+body {
+  background: linear-gradient(lightblue, darkblue);
+  height: 100vh;
+}
+
+.beginner {
+  height: 90vh;
+  width: 90%;
+  margin: 20px auto;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+}
+
+/* Beginner plus */
+
+.beginner-plus {
+  height: 90vh;
+  width: 90%;
+  margin: 20px auto;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.p-box1 {
+  grid-column: spam 2;
+}
+
+.p-box2 {
+  grid-column: spam 6;
+}
+
+.p-box3 {
+  grid-column: spam 4;
+}
+
+/* Pro level */
+
+.pro {
+  height: 90vh;
+  width: 90%;
+  margin: 20px auto;
+
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    " h h h h  h h h h  h h h h"
+    " b b b b  b b b b  b b b b"
+    " m m m m  m m m m  m m m m"
+    " s s s s  s s s s  s s s s"
+    " f f f f  f f f f  f f f f";
+}
+
+.proB-1 {
+  grid-area: h;
+}
+.proB-2 {
+  grid-area: b;
+}
+.proB-3 {
+  grid-area: m;
+}
+.proB-4 {
+  grid-area: s;
+}
+.proB-5 {
+  grid-area: f;
+}
+
+@media (min-width: 760px) {
+  .pro {
+    height: 90vh;
+    width: 90%;
+    margin: 20px auto;
+
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      " h h h h  h h h h  h h h h"
+      " b b b b  m m m m  m m m m"
+      " b b b b  m m m m  m m m m"
+      " s s s s  m m m m  m m m m"
+      " f f f f  f f f f  f f f f";
+  }
+
+  .proB-1 {
+    grid-area: h;
+  }
+  .proB-2 {
+    grid-area: b;
+  }
+  .proB-3 {
+    grid-area: m;
+  }
+  .proB-4 {
+    grid-area: s;
+  }
+  .proB-5 {
+    grid-area: f;
+  }
+}
+
+@media (min-width: 1080px) {
+  .pro {
+    height: 90vh;
+    width: 90%;
+    margin: 20px auto;
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      " h h h h  h h h h  h h h h"
+      " b b m m  m m m m  m m s s"
+      " b b m m  m m m m  m m s s"
+      " b b m m m m m m  m m s s"
+      " f f f f  f f f f  f f s s";
+  }
+
+  .proB-1 {
+    grid-area: h;
+  }
+  .proB-2 {
+    grid-area: b;
+  }
+  .proB-3 {
+    grid-area: m;
+  }
+  .proB-4 {
+    grid-area: s;
+  }
+  .proB-5 {
+    grid-area: f;
+  }
+}
