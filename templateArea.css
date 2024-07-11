@@ -1,0 +1,59 @@
+.wrapper {
+
+    display: grid;
+
+    grid-template-columns: repeat(9, 1fr);
+
+    grid-auto-rows: minmax(100px, auto);
+
+    border: 2px solid #f76707;
+
+    border-radius: 5px;
+
+    background-color: #fff4e6;
+
+    max-width: 940px;
+
+    margin: 0 auto;
+
+
+    grid-template-areas: 
+    "head head head head head"
+    "side side content content content"
+    "footer footer footer footer footer "
+   }
+
+   .wrapper div {
+
+    border: 2px solid #ffa94d;
+
+    border-radius: 5px;
+
+    background-color: #ffd8a8;
+
+    padding: 1em;
+
+    color: #d9480f;
+
+    
+
+   }
+
+   .sidebar {
+        grid-area: side;
+        
+   }
+
+   .header {
+    grid-area: head;
+    width: 39.1em;
+    
+   }
+
+   .content {
+    grid-area: content;
+   }
+
+   .footer {
+    grid-area: footer;
+   }
