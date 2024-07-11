@@ -254,6 +254,24 @@ h1 {
 
 }
 
+.main-semantic-right {
+  grid-area: right;
+}
+
+.semantic-footer {
+  grid-area: foot;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.semantic-footer p {
+  display: inline;
+}
+
+.semantic-article {
+  grid-area: art;
+}
+
 .nav-semantic-right { 
   grid-area: right;
   width: 200px;

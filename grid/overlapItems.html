@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overlap items</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+                background: lightslategray;
+                width: 300px;
+                margin: 50px auto 0;
+                display: grid;
+                grid-template-columns: repeat(2,150px);
+                grid-template-rows: repeat(2, 150px);
+        }
+
+        .items {
+            max-width: 150px;
+            color: #fff;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            
+
+        }
+
+        .item1 {
+            background: orangered;
+            grid-column: 1/ span 2;
+            align-self: start;
+            z-index: 3;
+        }
+
+        .item2 {
+            /* font-size: 25px; */
+            background: yellowgreen;
+            grid-column: 1/ span 2;
+            align-self: center;
+            justify-self: center;
+            z-index: 1;
+        }
+
+        .item3 {
+            background: mediumpurple;
+            grid-column: 1/ span 2;
+            align-self: end;
+            justify-self: end;
+            z-index: 2;
+        }
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items item1"> Lorem ipsum dolor .</div>
+        <div class="items item2">Lorem, ipsum dolor.</div>
+        <div class="items item3">Lorem, ipsum dolor.</div>
+    </div>
+</body>
+</html>
