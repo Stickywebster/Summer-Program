@@ -167,3 +167,33 @@ body {
     grid-area: f;
   }
 }
+
+/* Master level */
+
+.master-container img {
+    width: 180px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* .master-container {
+
+} */
+
+.card {
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.card .gojo-info {
+    background: darkblue;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
