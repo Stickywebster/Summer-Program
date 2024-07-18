@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="basicresponsive.css">
+</head>
+<body>
+    <header class="navigation-header">
+        <nav>
+            <div class="logo-container">
+                <a href="#">Logo</a>
+            </div>
+            <div class="navigation-items">
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact me</a>
+            </div>
+            <div class="side-bar">
+                <li onclick="hideSidebar()"><a href="#">X</a></li>
+               <li> <a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact me</a></li>
+            </div>
+            <div class="hamburger">
+                <li onclick="showSidebar()"><span id="openHam">&#9776;</span></li>
+            </div>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+
+            }
+        </script>
+    </header>
+</body>
+</html>
