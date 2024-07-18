@@ -1,0 +1,82 @@
+
+  
+  .m-container {
+    grid-area: m2;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: #003566;
+    color: #ffd60a;
+    border: solid;
+    width: 90%;
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  header h2 {
+    text-align: center;
+    color: #bea318;
+    text-shadow: 2px 2px 2px#122033;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(rgb(37, 201, 255), #000814);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+  }
+  .m-container {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav "
+    "blog main main two"
+    "blog main main two"
+    "foot foot foot foot";
+
+
+  }
+
+  .nav {
+    grid-area: nav;
+}
+  
+
+.blog {
+    grid-area: blog;
+}
+
+.blog-two {
+    grid-area: two;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: foot;
+}
+
+
+@media screen and (max-width: 600px) {
+  .m-container{
+    grid-template-areas:
+    "nav nav"
+    "left left"
+    "main main"
+    "right right"
+    "foot "
+    
+}
+
+/*   
+   @media screen and (max-width: 600px) {}
+    .header {
+        float: left;
+    }
+
+    .container {
+        gap: 20px;
+    } */

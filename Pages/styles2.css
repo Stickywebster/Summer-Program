@@ -288,3 +288,14 @@ h1 {
 .main-semantic-left {
   grid-area: main-lt;
 }
+
+@media screen and (max-width: 600px) {
+  .main-h-container{
+    grid-template-areas:
+    "nav"
+    "left"
+    "main"
+    "right"
+    "foot"
+}
+}

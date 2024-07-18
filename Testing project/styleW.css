@@ -41,21 +41,22 @@ li a:hover {
 }
 
 .main-h-container {
-  height: 90vh;
+  /* height: 90vh;
   width: 90%;
-  margin: 20px auto;
+  margin: 20px auto; */
 
   display: grid;
   gap: 20px;
 
-  grid-template-columns: repeat(12, 1fr);
   grid-template-areas:
-    "n n n n n n n n n n n n"
-    "h h h h h h h h h h h h"
-    "s s m m m m m m m m m m"
-    "s s m2 m2 m2 m2 m2 m2 m2 m2 m2 m2"
-    "s s m3 m3 m3 m3 m3 m3 m3 m3 m3 m3";
+    "n n n n n n"
+    "h h h h h h"
+    "s b b b b b"
+    "s m m m m m"
+    "e e e e e e"
 }
+
+
 
 .nav-h {
   grid-area: n;
@@ -68,6 +69,32 @@ li a:hover {
 .div-H {
   grid-area: s;
 }
+
+.info1 {
+  grid-area: b;
+}
+
+.info2 {
+  grid-area: m;
+}
+
+.info3 {grid-area: e;}
+
+
+@media screen and (max-width: 600px) {
+  .main-h-container{
+    grid-template-areas:
+    "n"
+    "h"
+    "s"
+    "b"
+    "m"
+    "e"
+}
+}
+
+
+
 
 .info1 {
   grid-area: m;
@@ -102,6 +129,9 @@ body {
   background-size: cover;
   min-height: 100vh;
 }
+
+
+
 
 /* Page 2 styles below */
 body {
