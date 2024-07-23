@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic form</title>
+  </head>
+  <style>
+
+    .basic-form {
+      background-color: blue;
+      border-radius: 25px;
+      border: 2px solid blue;
+      border-top: 30px solid blue;
+      width: 300px;
+      height: 300px;
+      top: 20%;
+      right: 40px;
+      left: 35%;
+      position: fixed;
+      bottom: 20%;
+      color: orange;
+      display: block;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-bottom: 70px;
+      margin: auto 0;
+      
+    }
+    .text {
+        padding: 20px;
+    }
+
+    form {
+      align-items: center;
+    }
+
+    button {
+      border: 0;
+      background-color: rgb(172, 227, 172);
+      border-radius: 25px;
+      width: 150px;
+      height: 30px;
+      position: fixed;
+      top: 40%;
+      left: 45.5%;
+      color: black;
+      text-align: center;
+      margin-top: 150px;
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <div>
+      <form name="basic" class="basic-form">
+        <label for="fname" class="text">First Name</label>
+        <input type="text" class="input" name="firstname" /><br> <br>
+        <label for="lname" class="text">Last Name</label>
+        <input type="text" class="input" name="lname" /><br /><br />
+        <label for="jtitle" class="text">Job Title</label>
+        <input type="text" class="input" name="jobtitle" /><br /><br />
+        <label for="address" class="text">Address</label>
+        <input type="text" class="input" name="address" /><br /><br/>
+        <label for="phone" class="text">Phone</label>
+        <input type="text" class="input" name="phone" />
+        <div class="submit">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
