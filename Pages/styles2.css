@@ -312,3 +312,8 @@ h1 {
 #fname:focus {
   border: 4px solid #555
 }
+
+#favcolor {
+  width: 200px;
+  text-align: center;
+}
