@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <style>
+    .container {
+      background-color: #cad593;
+      border: 2px solid #87a330;
+      border-radius: 25px;
+      color: #104911;
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      text-align: center;
+      box-shadow: 10px 10px 5px 5px;
+    }
+
+    .forgot {
+      float: right;
+      padding-right: 50px;
+    }
+
+    .text {
+      float: right;
+      padding-right: 70px;
+      padding-left: 0px;
+      margin-left: 0px;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    a:link {
+      color: #6a994e;
+      text-decoration: none;
+    }
+
+    button {
+      background-color: #87a330;
+      border-radius: 25px;
+      border-color: #87a330;
+      width: 100px;
+      height: 30px;
+    }
+
+    body {
+      background-image: url(C:\Users\Student\Summer-Program\Images\jungle.avif);
+      height: 1000px;
+    }
+
+    .input {
+      position: relative;
+      left: 100px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Login Page</h1>
+      <label for="fname">Username</label><br />
+      <input type="text" id="fname" name="username" /><br />
+      <br />
+
+      <label for="pwd">Password</label><br />
+      <input type="password" id="pwd" name="pwd" /><br /><br /><br />
+
+      <button>Log In Here</button> <br />
+      <br /><br />
+
+      <input
+        type="checkbox"
+        id="rem"
+        name="dow"
+        class="input"
+        value="Remember"
+      />
+      <label for="rem" class="text"> Remember me </label> <br />
+      <br />
+
+      <a href="#" class="forgot"> Forgot Password? </a>
+    </div>
+  </body>
+</html>
