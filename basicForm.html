@@ -6,7 +6,6 @@
     <title>Basic form</title>
   </head>
   <style>
-
     .basic-form {
       background-color: blue;
       border-radius: 25px;
@@ -25,10 +24,9 @@
       padding-right: 35px;
       padding-bottom: 70px;
       margin: auto 0;
-      
     }
     .text {
-        padding: 20px;
+      padding: 20px;
     }
 
     form {
@@ -54,19 +52,52 @@
     <div>
       <form name="basic" class="basic-form">
         <label for="fname" class="text">First Name</label>
-        <input type="text" class="input" name="firstname" /><br> <br>
+        <input type="text"  id="fname" name="firstname" /><br />
+        <br />
         <label for="lname" class="text">Last Name</label>
-        <input type="text" class="input" name="lname" /><br /><br />
+        <input type="text"  id="lname" name="lname" /><br /><br />
         <label for="jtitle" class="text">Job Title</label>
-        <input type="text" class="input" name="jobtitle" /><br /><br />
+        <input
+          type="text"
+          
+          id="jtitle"
+          name="jobtitle"
+        /><br /><br />
         <label for="address" class="text">Address</label>
-        <input type="text" class="input" name="address" /><br /><br/>
+        <input
+          type="text"
+          
+          id="address"
+          name="address"
+        /><br /><br />
         <label for="phone" class="text">Phone</label>
-        <input type="text" class="input" name="phone" />
-        <div class="submit">
-          <button>Submit</button>
+        <input type="text" id="phone" name="phone" />
+
+
+        <div class="out-form">
+          <h3 id="out-name"></h3>
+          <h3 id="out-lname"></h3>
+          <!-- <h3 id="out-color"></h3>
+            <h3 id="out-days"></h3> -->
         </div>
+        <button type="button" onclick="result()">Submit</button>
       </form>
     </div>
   </body>
+  <script>
+    function result() {
+      const first = document.getElementById("fname").value;
+      const last = document.getElementById("lname");
+      var days = [];
+
+      dow.forEach((element) => {
+        if (element.checked) {
+          days.push(element.value);
+        }
+      });
+
+      document.getElementById("out-name").innerHTML = "Name: " + first;
+      document.getElementById("out-lname").innerHTML = "Last Name: " + last;
+    }
+  </script>
 </html>
