@@ -5,18 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final project demo website</title>
   </head>
+  <style>
+
+    /* Layout grid */
+    .headerP,
+    .paraOne,
+    .paraTwo,
+    .paraThree {
+      display: grid;
+      place-items: center;
+      border: solid 5px orangered;
+      padding: 100px;
+      border-radius: 25px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+      color: black;
+    }
+
+    .pro {
+      height: 90vh;
+      width: 90%;
+      margin: 20px auto;
+
+      display: grid;
+      gap: 20px;
+
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas:
+        " n n n n  n n n n  n n n n"
+        " h h h h  h h h h  h h h h"
+        " s s s s  m m m m  b b b b"
+        " s s s s  m m m m  b b b b";
+        
+    .headerP {
+      grid-area: h;
+    }
+    .paraOne {
+      grid-area: s;
+    }
+    .paraTwo {
+      grid-area: m;
+    }
+    .paraThree {
+      grid-area: b;
+    }
+
+    .Nav {
+      grid-area: n;
+    }
+
+    }
+
+    @media (max-width: 500px) {
+        .pro {
+  height: 90vh;
+  width: 90%;
+  margin: 20px auto;
+
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    " n n n n  n n n n  n n n n"
+    " h h h h  h h h h  h h h h"
+    " b b b b  b b b b  b b b b"
+    " m m m m  m m m m  m m m m"
+    " s s s s  s s s s  s s s s"
+    ;
+    
+    .headerP {
+      grid-area: h;
+    }
+    .paraOne {
+      grid-area: s;
+    }
+    .paraTwo {
+      grid-area: m;
+    }
+    .paraThree {
+      grid-area: b;
+    }
+
+    .Nav {
+      grid-area: n;
+    }
+
+}
+
+    }
+
+    h1 {
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    /* Navagation  */
+    .nav-h li {
+    float: left;
+  }
+
+  .nav-h {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* img */
+
+  img {
+    padding: 10;
+    width: 100px;
+    
+  }
+
+
+  </style>
   <body>
-    <p>
-      A field of IT im interested in is game developement. My interested in
-      games developled early on when i was a little kid. I played video games
-    </p>
-    <p>
-      What motivates me more is that there is so much for me to learn and
-      continue learning.
-    </p>
-    <p>
-      I would like to learn more about the development of games and some coding
-      languages that are used to design different games
-    </p>
+    <div class="pro">
+      <div class="headerP">Header picture (1)</div>
+      <div class="paraOne">
+        <h1>Title 1</h1>
+        <p>A field of IT im interested in is game developement. My interested in
+            games developled early on when i was a little kid. I played video games</p>
+      </div>
+      <div class="paraTwo">
+        <h1>Title 2</h1>
+        <p>What motivates me more is that there is so much for me to learn and
+            continue learning.</p>
+            <img src="Images\jungle.avif" alt="jungle">
+      </div>
+      <div class="paraThree">
+        <h1>Title 3</h1>
+        <p>
+          I would like to learn more about the development of games and some
+          coding languages that are used to design different games
+        </p>
+      </div>
+
+      <div class="Nav">
+        <ul class="nav-h">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">N/a</a></li>
+            <li><a href="#">n/a</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </body>
 </html>

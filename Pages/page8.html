@@ -8,42 +8,42 @@
   </head>
   <body>
     <form name="basic" class="basic-form"></form>
-    <label for="fname">username</label><br />
+    <label for="fname">Username</label><br />
     <input type="text" id="fname" name="username" /><br />
-    <label for="pwd">password</label><br />
+    <label for="pwd">Password</label><br />
     <input type="password" id="pwd" name="pwd" /><br /><br />
 
     <!-- radio button -->
     <input type="radio" id="a" name="movie" value="action" />
-    <label for="a"> action </label> <br />
+    <label for="a"> Action </label> <br />
 
     <input type="radio" id="c" name="movie" value="comedy" />
-    <label for="c"> comedy </label> <br />
+    <label for="c"> Comedy </label> <br />
 
     <input type="radio" id="d" name="movie" value="drama" />
-    <label for="d"> drama </label> <br /><br />
+    <label for="d"> Drama </label> <br /><br />
 
     <!-- check boxes -->
     <input type="checkbox" id="mon" name="dow" value="monday" />
-    <label for="mon"> monday </label> <br />
+    <label for="mon"> Monday </label> <br />
 
     <input type="checkbox" id="tue" name="dow" value="tuesday" />
-    <label for="tue"> tuesday </label> <br />
+    <label for="tue"> Tuesday </label> <br />
 
     <input type="checkbox" id="wed" name="dow" value="wednesday" />
-    <label for="wed"> wednesday </label> <br />
+    <label for="wed"> Wednesday </label> <br />
 
     <input type="checkbox" id="thu" name="dow" value="thursday" />
-    <label for="thu"> thursday</label> <br />
+    <label for="thu"> Thursday</label> <br />
 
     <input type="checkbox" id="fri" name="dow" value="friday" />
-    <label for="fri"> friday </label> <br />
+    <label for="fri"> Friday </label> <br />
 
     <input type="checkbox" id="sat" name="dow" value="saturday" />
-    <label for="sat"> saturday </label> <br />
+    <label for="sat"> Saturday </label> <br />
 
     <input type="checkbox" id="sun" name="dow" value="sunday" />
-    <label for="sun"> sunday </label> <br /><br />
+    <label for="sun"> Sunday </label> <br /><br />
 
     <!-- select colors -->
     <form name="basic" class="basic-form">
@@ -52,13 +52,45 @@
         <select name="favcolor" id="favcolor" size="1">
           <option disabled selected value="">---Choose a color---</option>
           <br />
-          <option value="red">red</option>
-          <option value="blue">blue</option>
-          <option value="green">green</option>
-          <option value="yellow">yellow</option>
-          <option value="purple">purple</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+          <option value="purple">Purple</option>
         </select>
       </div>
+      <!-- <button type="button" onclick="alert('Hello world!')">Hello</button> -->
+      <!-- <form name="basic" class="basic-form"></form> -->
+      <div class="out-form">
+        <h3 id="out-name"></h3>
+        <h3 id="out-movie"></h3>
+        <h3 id="out-color"></h3>
+        <h3 id="out-days"></h3>
+      </div>
+      <button type="button" onclick="result()">Submit</button>
     </form>
   </body>
+
+  <script>
+    function result() {
+      const name = document.getElementById("fname").value;
+      const dow = document.getElementsByName("dow");
+      const movie = document.forms.basic.movie.value;
+      const color = document.forms.basic.favcolor.value;
+      var days = [];
+
+      dow.forEach((element) => {
+        if (element.checked) {
+          days.push(element.value);
+        }
+      });
+
+      document.getElementById("out-name").innerHTML = "Name: " + name;
+      document.getElementById("out-movie").innerHTML = "Movie: " + movie;
+      document.getElementById("out-color").innerHTML =
+        "favorite color: " + color;
+      document.getElementById("out-days").innerHTML =
+        "Days chosen: " + days.join(", ");
+    }
+  </script>
 </html>
