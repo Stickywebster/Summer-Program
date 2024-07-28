@@ -3,48 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>form elements</title>
+    <title>Form Elements</title>
     <!-- <link rel="stylesheet" href="styles2.css" /> -->
-    >
   </head>
   <body>
     <form name="basic" class="basic-form"></form>
     <label for="fname">Username</label><br />
     <input type="text" id="fname" name="username" /><br />
-    <label for="pwd">Password</label><br />
+    <label for="pwd">Password:</label><br />
     <input type="password" id="pwd" name="pwd" /><br /><br />
 
     <!-- radio button -->
-    <input type="radio" id="a" name="movie" value="action" />
-    <label for="a"> Action </label> <br />
+    <div class="more-form">
+      <input type="radio" id="a" name="movie" value="action" />
+      <label for="a"> Action </label> <br />
 
-    <input type="radio" id="c" name="movie" value="comedy" />
-    <label for="c"> Comedy </label> <br />
+      <input type="radio" id="c" name="movie" value="comedy" />
+      <label for="c"> Comedy </label> <br />
 
-    <input type="radio" id="d" name="movie" value="drama" />
-    <label for="d"> Drama </label> <br /><br />
+      <input type="radio" id="d" name="movie" value="drama" />
+      <label for="d"> Drama </label> <br /><br />
+    </div>
 
     <!-- check boxes -->
-    <input type="checkbox" id="mon" name="dow" value="monday" />
-    <label for="mon"> Monday </label> <br />
+    <div class="more-form">
+      <input type="checkbox" id="mon" name="dow" value="monday" />
+      <label for="mon"> Monday </label> <br />
 
-    <input type="checkbox" id="tue" name="dow" value="tuesday" />
-    <label for="tue"> Tuesday </label> <br />
+      <input type="checkbox" id="tue" name="dow" value="tuesday" />
+      <label for="tue"> Tuesday </label> <br />
 
-    <input type="checkbox" id="wed" name="dow" value="wednesday" />
-    <label for="wed"> Wednesday </label> <br />
+      <input type="checkbox" id="wed" name="dow" value="wednesday" />
+      <label for="wed"> Wednesday </label> <br />
 
-    <input type="checkbox" id="thu" name="dow" value="thursday" />
-    <label for="thu"> Thursday</label> <br />
+      <input type="checkbox" id="thu" name="dow" value="thursday" />
+      <label for="thu"> Thursday</label> <br />
 
-    <input type="checkbox" id="fri" name="dow" value="friday" />
-    <label for="fri"> Friday </label> <br />
+      <input type="checkbox" id="fri" name="dow" value="friday" />
+      <label for="fri"> Friday </label> <br />
 
-    <input type="checkbox" id="sat" name="dow" value="saturday" />
-    <label for="sat"> Saturday </label> <br />
+      <input type="checkbox" id="sat" name="dow" value="saturday" />
+      <label for="sat"> Saturday </label> <br />
 
-    <input type="checkbox" id="sun" name="dow" value="sunday" />
-    <label for="sun"> Sunday </label> <br /><br />
+      <input type="checkbox" id="sun" name="dow" value="sunday" />
+      <label for="sun"> Sunday </label> <br /><br />
+    </div>
 
     <!-- select colors -->
     <form name="basic" class="basic-form">
@@ -78,8 +81,12 @@
     function result() {
       const name = document.getElementById("fname").value;
       const dow = document.getElementsByName("dow");
-      const movie = document.forms.basic.movie.value;
-      const color = document.forms.basic.favcolor.value;
+      // added theses
+      // const color = document.getElementById("color");
+      // const movie = document.getElementsByClassName("movie")
+      // Removed value at the end some reason it wasnt working?
+      const movie = document.forms.basic.movie;
+      const color = document.forms.basic.favcolor;
       var days = [];
 
       dow.forEach((element) => {

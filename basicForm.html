@@ -11,8 +11,8 @@
       border-radius: 25px;
       border: 2px solid blue;
       border-top: 30px solid blue;
-      width: 300px;
-      height: 300px;
+      width: fit-content;
+      height: fit-content;
       top: 20%;
       right: 40px;
       left: 35%;
@@ -25,6 +25,7 @@
       padding-bottom: 70px;
       margin: auto 0;
     }
+
     .text {
       padding: 20px;
     }
@@ -37,67 +38,92 @@
       border: 0;
       background-color: rgb(172, 227, 172);
       border-radius: 25px;
-      width: 150px;
-      height: 30px;
-      position: fixed;
-      top: 40%;
-      left: 45.5%;
+      width: fit-content;
+      height: fit-content;
       color: black;
-      text-align: center;
-      margin-top: 150px;
+      margin-top: 15px;
       text-decoration: none;
+      position:absolute;
+      top: 80%;
+      left: 45%;
+      
     }
+
+    .out-form {
+      text-align: center;
+      color: gold;
+      margin-bottom: 0;
+      width: 100%;
+      padding: 0.1em;
+      
+    }
+
+    h1 {
+      color: red;
+      display: hidden;
+    }
+
+    
+
   </style>
   <body>
     <div>
       <form name="basic" class="basic-form">
         <label for="fname" class="text">First Name</label>
-        <input type="text"  id="fname" name="firstname" /><br />
+        <input type="text" id="fname" name="firstname" /><br />
         <br />
         <label for="lname" class="text">Last Name</label>
-        <input type="text"  id="lname" name="lname" /><br /><br />
-        <label for="jtitle" class="text">Job Title</label>
-        <input
-          type="text"
-          
-          id="jtitle"
-          name="jobtitle"
-        /><br /><br />
-        <label for="address" class="text">Address</label>
-        <input
-          type="text"
-          
-          id="address"
-          name="address"
-        /><br /><br />
-        <label for="phone" class="text">Phone</label>
-        <input type="text" id="phone" name="phone" />
+        <input type="text" id="lname" name="lastname" /><br /><br />
 
+        <label for="jtitle" class="text">Job Title</label>
+        <input type="text" id="jtitle" name="jobtitle" /><br /><br />
+
+        <label for="address" class="text">Address</label>
+        <input type="text" id="address" name="ads" /><br /><br />
+
+        <label for="phone" class="text">Phone</label>
+        <input type="text" id="phone" name="phone" /> <br /><br />
 
         <div class="out-form">
+          <h1 id="out-submit"></h1>
           <h3 id="out-name"></h3>
           <h3 id="out-lname"></h3>
-          <!-- <h3 id="out-color"></h3>
-            <h3 id="out-days"></h3> -->
+          <h3 id="out-jobtitle"></h3>
+          <h3 id="out-address"></h3>
+          <h3 id="out-phone"></h3>
         </div>
-        <button type="button" onclick="result()">Submit</button>
+        <br />
+        <br />
+       <button type="button" onclick="result()">Submit</button>
+      
       </form>
     </div>
+
   </body>
   <script>
     function result() {
       const first = document.getElementById("fname").value;
-      const last = document.getElementById("lname");
+      const last = document.forms.basic.lastname.value;
+      const job = document.forms.basic.jobtitle.value;
+      const add = document.forms.basic.ads.value;
+      const phone = document.forms.basic.phone.value;
+      const submit = document.forms.basic.submit.value;
+      // const job = document.getElementById("jtitle");
+      // const add = document.getElementById("address");
       var days = [];
 
-      dow.forEach((element) => {
-        if (element.checked) {
-          days.push(element.value);
-        }
-      });
+      // dow.forEach((element) => {
+      //   if (element.checked) {
+      //     days.push(element.value);
+      //   }
+      // });
 
+      document.getElementById("out-submit").innerHTML = "Infomation Submit!! " ;
       document.getElementById("out-name").innerHTML = "Name: " + first;
       document.getElementById("out-lname").innerHTML = "Last Name: " + last;
+      document.getElementById("out-jobtitle").innerHTML = "Job:" + job;
+      document.getElementById("out-address").innerHTML = "address:" + add;
+      document.getElementById("out-phone").innerHTML = "Phone:" + phone;
     }
   </script>
 </html>
