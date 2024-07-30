@@ -1,0 +1,162 @@
+
+
+
+h1 {
+    margin: 0 auto;
+    padding: 1px;
+    
+    text-decoration-line: underline;
+    
+}
+
+body {
+    background-image: linear-gradient(whitesmoke,#254d25);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    
+
+
+/* Navagation  */
+.nav-h li {
+float: left;
+}
+
+.nav-h {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background: #254d34;
+
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* img */
+.headerP {
+    background-image:url();
+
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* About me button */
+button {
+    border: 0;
+    background-color: rgb(172, 227, 172);
+    border-radius: 25px;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    margin-top: 15px;
+    text-decoration: none;
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    
+  }
+
+
+
+   
+   /* Layout grid */
+    .headerP,
+    .paraOne,
+    .paraTwo,
+    .paraThree {
+      display: grid;
+      place-items: center;
+      border: solid 2px #1a7431;
+      background-color: #208b3a;
+      padding: 100px;
+      border-radius: 25px;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      color: whitesmoke;
+      text-shadow: 1px 1px 1px #a3b18a;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .pro {
+      height: fit-content;
+      width: fit-content;
+      margin: 20px auto;
+
+      display: grid;
+      gap: 20px;
+
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas:
+        " n n n n  n n n n  n n n n"
+        " h h h h  h h h h  h h h h"
+        " s s s s  m m m m  b b b b"
+        " s s s s  m m m m  b b b b";
+        
+    .headerP {
+      grid-area: h;
+    }
+    .paraOne {
+      grid-area: s;
+    }
+    .paraTwo {
+      grid-area: m;
+    }
+    .paraThree {
+      grid-area: b;
+    }
+
+    .Nav {
+      grid-area: n;
+    }
+
+    }
+
+    /* Moblie use  */
+
+    @media (max-width: 500px) {
+        .pro {
+  height: 90vh;
+  width: 90%;
+  margin: 20px auto;
+
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    " n n n n  n n n n  n n n n"
+    " h h h h  h h h h  h h h h"
+    " b b b b  b b b b  b b b b"
+    " m m m m  m m m m  m m m m"
+    " s s s s  s s s s  s s s s"
+    ;
+    
+    .headerP {
+      grid-area: h;
+    }
+    .paraOne {
+      grid-area: s;
+    }
+    .paraTwo {
+      grid-area: m;
+    }
+    .paraThree {
+      grid-area: b;
+    }
+
+    .Nav {
+      grid-area: n;
+    }
+
+}
+
+    }
