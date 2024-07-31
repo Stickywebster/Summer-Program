@@ -1,131 +1,90 @@
-
-
-
 h1 {
-    margin: 0 auto;
-    padding: 1px;
-    
-    text-decoration-line: underline;
-    
+  margin: 0 auto;
+  padding: 1px;
+
+  text-decoration-line: underline;
+}
+
+.headerP {
+  background-image: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGdyZWVuJTIwY29kaW5nfGVufDB8fDB8fHww);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  border: none;
+  
+}
+
+.main-title {
+  
+  text-transform: uppercase;
+  text-overflow: hidden;
+  letter-spacing: 5px;
+  
 }
 
 body {
-    background-image: linear-gradient(whitesmoke,#254d25);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: linear-gradient(whitesmoke, #254d25);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-    
-
 
 /* Navagation  */
 .nav-h li {
-float: left;
+  float: left;
 }
 
 .nav-h {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background: #254d34;
-
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #254d34;
 }
 
 li a {
-display: block;
-color: white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-/* img */
-.headerP {
-    background-image:url();
-
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* img  border and background*/
+img {
+  background-color: #1a7431;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
 }
 
 
-/* About me button */
-button {
-    border: 0;
-    background-color: rgb(172, 227, 172);
-    border-radius: 25px;
-    width: fit-content;
-    height: fit-content;
-    color: black;
-    margin-top: 15px;
-    text-decoration: none;
-    position:absolute;
-    top: 40%;
-    left: 50%;
-    
-  }
 
+/* Layout grid */
+.headerP,
+.paraOne,
+.paraTwo,
+.paraThree {
+  display: grid;
+  place-items: center;
+  border: solid 2px #1a7431;
+  background-color: #208b3a;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px #a3b18a;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 
-
-   
-   /* Layout grid */
-    .headerP,
-    .paraOne,
-    .paraTwo,
-    .paraThree {
-      display: grid;
-      place-items: center;
-      border: solid 2px #1a7431;
-      background-color: #208b3a;
-      padding: 100px;
-      border-radius: 25px;
-      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-      color: whitesmoke;
-      text-shadow: 1px 1px 1px #a3b18a;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-
-    .pro {
-      height: fit-content;
-      width: fit-content;
-      margin: 20px auto;
-
-      display: grid;
-      gap: 20px;
-
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-areas:
-        " n n n n  n n n n  n n n n"
-        " h h h h  h h h h  h h h h"
-        " s s s s  m m m m  b b b b"
-        " s s s s  m m m m  b b b b";
-        
-    .headerP {
-      grid-area: h;
-    }
-    .paraOne {
-      grid-area: s;
-    }
-    .paraTwo {
-      grid-area: m;
-    }
-    .paraThree {
-      grid-area: b;
-    }
-
-    .Nav {
-      grid-area: n;
-    }
-
-    }
-
-    /* Moblie use  */
-
-    @media (max-width: 500px) {
-        .pro {
-  height: 90vh;
-  width: 90%;
+.pro {
+  height: fit-content;
+  width: fit-content;
   margin: 20px auto;
 
   display: grid;
@@ -135,11 +94,46 @@ button {
   grid-template-areas:
     " n n n n  n n n n  n n n n"
     " h h h h  h h h h  h h h h"
-    " b b b b  b b b b  b b b b"
-    " m m m m  m m m m  m m m m"
-    " s s s s  s s s s  s s s s"
-    ;
-    
+    " s s s s  m m m m  b b b b"
+    " s s s s  m m m m  b b b b";
+
+  .headerP {
+    grid-area: h;
+  }
+  .paraOne {
+    grid-area: s;
+  }
+  .paraTwo {
+    grid-area: m;
+  }
+  .paraThree {
+    grid-area: b;
+  }
+
+  .Nav {
+    grid-area: n;
+  }
+}
+
+/* Moblie use  */
+
+@media (max-width: 500px) {
+  .pro {
+    height: 90vh;
+    width: 90%;
+    margin: 20px auto;
+
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      " n n n n  n n n n  n n n n"
+      " h h h h  h h h h  h h h h"
+      " b b b b  b b b b  b b b b"
+      " m m m m  m m m m  m m m m"
+      " s s s s  s s s s  s s s s";
+
     .headerP {
       grid-area: h;
     }
@@ -156,7 +150,61 @@ button {
     .Nav {
       grid-area: n;
     }
-
+  }
 }
 
-    }
+/* testing */
+.open-button {
+    background-color: #15af2f;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed important!;
+    bottom: 200px;
+    right: 28px;
+    left: 20px;
+    width: 200px;
+    border-radius: 25px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 90;
+    right: 90px;
+    z-index: 9;
+    border: none;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #254d25;
+    color: white;
+    
+  }
+  
+
+  
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .profile-img {
+    width: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}

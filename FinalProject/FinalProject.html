@@ -3,22 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>final project</title>
+    <title>Nikolas's website</title>
     <link rel="stylesheet" href="FinalProject.css">
+
 </head>
 <body>
+    <div class="Nav">
+        <ul class="nav-h">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Nikolas Website</a></li>
+            <li><a href="#">Javier Website</a></li>
+          </ul>
+      </div>
+
     <div class="pro">
         <div class="headerP">
+            
+            <h1 class="main-title">Nikolas's Website</h1>
+            <p> Hello! Welcome to My Website. My Name is Nikolas Her and I am the creator</p>
+            <!-- Popup below here -->
+            <button class="open-button" onclick="openForm()">About me!</button>
 
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h1>About Me!</h1>
+
+                  <div class="profile-img">
+                    <img
+                      src="Images\Lake.jpg"
+                      alt="profileimg"
+                    />
+                  </div>
+              
+                  <label for="email"><b>Nikolas Her</b></label> <br>
+                  
+                  <label for="psw"><b>Age:18</b></label> <br>
+
+                  <label for="psw"><b>Likes:Superhero Movies, Video Games, Manga.</b> <br> </label>
+                  
+              
+              
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+            
             </div>
         <div class="paraOne">
           <h1>IT Interests</h1>
-          <p>My interests would be in software engineering because i would like to create video games. I find it interesting because i always been a big gamer. I feel like experiencing developement of video games would be an interesting experience. i also heard that they work on robots which i find pretty fascinating. </p>
+          <p>My interests in IT would be in video game software engineering because I love to play video games. I think participating in the development of video games would also be a fun and interesting experience to have. I want to help develop games because I would want other people to have the experience of playing video games too. Overall, im interested in video game software engineering because i love video games and i want entertain people with my games.
+        </p>
+        <img src="https://plus.unsplash.com/premium_photo-1661371243525-d02768a7feee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmlkZW8lMjBnYW1lJTIwc29mdHdhcmUlMjBlbmdpbmVlcnxlbnwwfHwwfHx8MA%3D%3D" alt="video game software engineering">
+        
         </div>
         <div class="paraTwo">
           <h1>Intership Motivation</h1>
-          <p>What motivates me to learn on this intership is that im new to coding. This intership provides me infomation that i can learn different coding skills. It overall helps me improve my cabilites to code and design websites.
+          <p>What really motivates me to learn on this intership is that coding is new to me, so theres is so much to do and learn about. This intership provides me infomation that i can learn different coding skills. This program helps introduce me different coding concept and terms
               continue learning.</p>
+              <img src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1vdGl2YXRpb24lMjB0ZWNofGVufDB8fDB8fHww" alt="codes" >
               
         </div>
         <div class="paraThree">
@@ -26,56 +67,37 @@
           <p>
             I would like to learn more about the development of games and some
             coding languages that are used to design different games. I would also like to learn on how to code java as i feel like java would help me make website more interative and interesting.
+        
           </p>
-        </div>
-  
-        <div class="Nav">
-          <ul class="nav-h">
-              <li><a class="active" href="#">Home</a></li>
-              <li><a href="#">N/a</a></li>
-              <li><a href="#">n/a</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!-- A button to open the popup form -->
-        <button class="open-button" onclick="openForm()">Open Form</button>
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGVhcm4lMjB0ZWNofGVufDB8fDB8fHww" alt="learning" >
 
-<div class="form-popup" id="myForm">
+          
+        </div>  
+        <!-- Testing -->
+         <div class="form-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
-    <h1>Info</h1>
+    <h1>About Me!</h1>
 
-    <label for="name"><b>Nikolas Her</b></label> <br>
+    <label for="email"><b>Nikolas Her</b></label> <br>
     
 
-    <label for="age"><b>Age: 18</b></label> <br>
-    
-    <label for="gender"><b>Gender: Male</b></label> <br>
-    
+    <label for="psw"><b>Age:18</b></label> <br>
 
+    <label for="psw"><b>Likes:Superhero Movies, Video Games, Manga.</b> </label><br>
 
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
+        
 
-
-  
-  </form>
-</div>
-       
 </body>
 <script>
-    function result() {
-
-
-        document.getElementById("myForm").style.display = "block";
-}
-
-    function closeForm() {
-
-    document.getElementById("myForm").style.display = "none";
-}
-
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
     
-       
-</script>
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
 </html>
