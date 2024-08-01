@@ -1,6 +1,7 @@
 h1 {
   margin: 0 auto;
   padding: 1px;
+  text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px darkgreen;
 
   text-decoration-line: underline;
 }
@@ -11,15 +12,13 @@ h1 {
   background-attachment: fixed;
   background-size: cover;
   border: none;
-  
 }
 
 .main-title {
-  
   text-transform: uppercase;
   text-overflow: hidden;
   letter-spacing: 5px;
-  
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 body {
@@ -30,8 +29,54 @@ body {
 }
 
 /* Navagation  */
-.nav-h li {
-  float: left;
+header {
+  padding: 10px 20px;
+
+  box-shadow: 0 5px 8px #ddd;
+
+  background: #254d34;
+  box-shadow: rgba(46, 240, 56, 0.4) 0px 5px, rgba(46, 240, 88, 0.3) 0px 10px,
+    rgba(46, 240, 88, 0.2) 0px 15px, rgba(7, 172, 57, 0.1) 0px 20px,
+    rgba(36, 116, 5, 0.05) 0px 25px;
+    
+}
+
+header li {
+  list-style: none;
+
+  display: inline-block;
+
+  padding: 0 20px;
+
+  font-weight: bold;
+ 
+}
+
+#nav-title {
+  font-size: 1.5em;
+  height: 7px;
+  color: whitesmoke;
+}
+
+header a {
+  text-decoration: none;
+
+  color: whitesmoke
+}
+
+header a:hover {
+  color: #6a1de4;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+/* .nav-h li {
+    
+    
+
 }
 
 .nav-h {
@@ -39,8 +84,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: #254d34;
-  box-shadow: rgba(46, 240, 56, 0.4) 0px 5px, rgba(46, 240, 88, 0.3) 0px 10px, rgba(46, 240, 88, 0.2) 0px 15px, rgba(7, 172, 57, 0.1) 0px 20px, rgba(36, 116, 5, 0.05) 0px 25px;
+  
 }
 
 li a {
@@ -51,6 +95,19 @@ li a {
   text-decoration: none;
 }
 
+.logo {
+font-size: 1.5em;
+  height: 7px;
+  color: whitesmoke;
+  list-style: none;
+
+  display: inline-block;
+
+  padding: 0 20px;
+
+  font-weight: bold;
+} */
+
 /* img  border and background*/
 img {
   background-color: #1a7431;
@@ -60,16 +117,11 @@ img {
   color: white;
 }
 
-
-
-
-
 /* Layout grid */
 .headerP,
 .paraOne,
 .paraTwo,
-.paraThree
- {
+.paraThree {
   display: grid;
   place-items: center;
   border: solid 2px #1a7431;
@@ -82,7 +134,9 @@ img {
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
-    box-shadow: rgba(46, 240, 56, 0.4) 0px 5px, rgba(46, 240, 88, 0.3) 0px 10px, rgba(46, 240, 88, 0.2) 0px 15px, rgba(7, 172, 57, 0.1) 0px 20px, rgba(36, 116, 5, 0.05) 0px 25px;
+  box-shadow: rgba(46, 240, 56, 0.4) 0px 5px, rgba(46, 240, 88, 0.3) 0px 10px,
+    rgba(46, 240, 88, 0.2) 0px 15px, rgba(7, 172, 57, 0.1) 0px 20px,
+    rgba(36, 116, 5, 0.05) 0px 25px;
   color: whitesmoke;
   text-shadow: 1px 1px 1px #a3b18a;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -161,108 +215,114 @@ img {
 
 /* testing */
 .open-button {
-    background-color: #15af2f;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed important!;
-    bottom: 200px;
-    right: 28px;
-    left: 20px;
-    width: 200px;
-    border-radius: 25px;
-  }
-  
-  /* The popup form - hidden by default */
-  .form-popup {
-    display: none;
-    position: fixed;
-    bottom: 90;
-    right: 90px;
-    z-index: 9;
-    border: none;
-  }
-  
-  /* Add styles to the form container */
-  .form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: #254d25;
-    color: white;
-    
-  }
-  
-
-  
-  
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
-    background-color: red;
-  }
-  
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-  }
-
-  .profile-img {
-    width: 100px;
-    border-radius: 20px;
-    padding: 10px;
-    color: white;
-    text-align: center;
+  background-color: #15af2f;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed important!;
+  bottom: 200px;
+  right: 28px;
+  left: 20px;
+  width: 200px;
+  border-radius: 25px;
 }
 
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 90;
+  right: 90px;
+  z-index: 9;
+  border: none;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #254d25;
+  color: white;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+
+
 /* Homepage */
-.Home-learn, .impact, .home-t{
-    display: grid;
-    place-items: center;
-    border: solid 2px #1a7431;
-    background-color: #208b3a;
-    padding: 100px;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-      rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-      rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    color: whitesmoke;
-    text-shadow: 1px 1px 1px #a3b18a;
-    font-family: Georgia, "Times New Roman", Times, serif;
+.Home-learn,
+.impact,
+.inspire,
+.home-t {
+  display: grid;
+  place-items: center;
+  border: solid 2px #1a7431;
+  background-color: #208b3a;
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px #a3b18a;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 
-    
+.home-t {
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  background-image: url(https://plus.unsplash.com/premium_photo-1675362696692-636305144028?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3JlZW58ZW58MHx8MHx8fDA%3D);
+  background-position: center;
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+}
 
+.home-title {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-decoration: none;
 }
 
 .container {
-    height: fit-content;
-    width: fit-content;
-    margin: 20px auto;
-  
-    display: grid;
-    gap: 20px;
-  
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas:
+  height: fit-content;
+  width: fit-content;
+  margin: 20px auto;
 
-      " n n n n  n n n n  n n n n"
-      " t t t t  t t t t  t t t t"
-      " h h h h  h h h h  h h h h"
-      " m m m m  m m m m  m m m m"
-      ;
-  
-    .Home-learn {
-      grid-area: h;
-    }
-  
-    .Nav {
-      grid-area: n;
-    }
-    
-    .impact {
-        grid-area: m;
-    }
-    
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    " n n n n  n n n n  n n n n"
+    " h h h h  h h h h  h h h h"
+    " t t t t  t t t t  t t t t"
+    " m m m m  m m m m  m m m m";
+
+  .home-t {
+    grid-area: h;
   }
+
+  .Nav {
+    grid-area: n;
+  }
+
+  .impact {
+    grid-area: m;
+  }
+
+  .inspire {
+    grid-area: t;
+  }
+}

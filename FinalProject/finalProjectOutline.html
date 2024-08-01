@@ -101,26 +101,47 @@
     }
 
     /* Navagation  */
-    .nav-h li {
-    float: left;
-  }
+    header {
+  padding: 20px 50px;
 
-  .nav-h {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.3);
-    
-  }
+  box-shadow: 0 5px 8px #ddd;
 
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+  background-color: rgb(180, 234, 98);
+
+  border-top: solid black 10px;
+}
+
+header li {
+  list-style: none;
+
+  display: inline-block;
+
+  padding: 0 20px;
+
+  font-weight: bold;
+}
+
+#nav-title {
+  font-size: 1.5em;
+  height: 7px;
+}
+
+header a {
+  text-decoration: none;
+
+  color: #555;
+}
+
+header a:hover {
+  color: #6a1de4;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
 
   /* img */
 
